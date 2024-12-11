@@ -1,4 +1,4 @@
-﻿namespace Tyuiu.RogovAyu.Sprint6.Task0.V6
+﻿namespace Tyuiu.RogovAYu.Sprint6.Task0.V6
 {
     partial class Form1
     {
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             GroupTask_RAYu = new GroupBox();
             pictureBox1 = new PictureBox();
             LabelTask_RAYu = new Label();
@@ -56,11 +55,10 @@
             GroupTask_RAYu.TabIndex = 0;
             GroupTask_RAYu.TabStop = false;
             GroupTask_RAYu.Text = "Условие";
-            GroupTask_RAYu.Enter += GroupTask_RAYu_Enter;
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Image = Properties.Resources.Untitled;
             pictureBox1.Location = new Point(576, 26);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(132, 63);
@@ -75,7 +73,6 @@
             LabelTask_RAYu.Size = new Size(242, 20);
             LabelTask_RAYu.TabIndex = 0;
             LabelTask_RAYu.Text = "Вычислить значение по формуле";
-            LabelTask_RAYu.Click += label2_Click;
             // 
             // GroupInput_RAYu
             // 
@@ -106,7 +103,6 @@
             TextIn_RAYu.TabIndex = 0;
             TextIn_RAYu.Text = "123";
             TextIn_RAYu.TextAlign = HorizontalAlignment.Center;
-            TextIn_RAYu.TextChanged += textBox1_TextChanged;
             // 
             // GroupOutput_RAYu
             // 
@@ -136,17 +132,16 @@
             LabelOutput_RAYu.Size = new Size(78, 20);
             LabelOutput_RAYu.TabIndex = 0;
             LabelOutput_RAYu.Text = "Результат:";
-            LabelOutput_RAYu.Click += label3_Click;
             // 
             // ButtonDo_RAYu
             // 
-            ButtonDo_RAYu.Location = new Point(635, 392);
+            ButtonDo_RAYu.Location = new Point(623, 392);
             ButtonDo_RAYu.Name = "ButtonDo_RAYu";
             ButtonDo_RAYu.Size = new Size(108, 29);
             ButtonDo_RAYu.TabIndex = 0;
             ButtonDo_RAYu.Text = "Выполнить";
             ButtonDo_RAYu.UseVisualStyleBackColor = true;
-            ButtonDo_RAYu.Click += button1_Click;
+            ButtonDo_RAYu.Click += ButtonDo_RAYu_Click;
             // 
             // ButtonHelp_RAYu
             // 
@@ -157,7 +152,7 @@
             ButtonHelp_RAYu.TabIndex = 3;
             ButtonHelp_RAYu.Text = "?";
             ButtonHelp_RAYu.UseVisualStyleBackColor = true;
-            ButtonHelp_RAYu.Click += button2_Click;
+            ButtonHelp_RAYu.Click += ButtonHelp_RAYu_Click;
             // 
             // Form1
             // 
@@ -173,7 +168,6 @@
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "6.0.6 | Рогов А.Ю";
-            Load += Form1_Load;
             GroupTask_RAYu.ResumeLayout(false);
             GroupTask_RAYu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
