@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.RogovAYu.Sprint6.Task
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.RogovAYu.Sprint6.Task0.V6.Lib", "Tyuiu.RogovAYu.Sprint6.Task0.V6.Lib\Tyuiu.RogovAYu.Sprint6.Task0.V6.Lib.csproj", "{D37BB3DC-2A1A-4D15-BC07-8D71002912B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.RogovAyu.Sprint6.Task0.V6", "Tyuiu.RogovAyu.Sprint6.Task0.V6\Tyuiu.RogovAyu.Sprint6.Task0.V6.csproj", "{46CE55DE-EC9F-4CEA-8913-0E60D683D83E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.RogovAYu.Sprint6.Task0.V6", "Tyuiu.RogovAyu.Sprint6.Task0.V6\Tyuiu.RogovAYu.Sprint6.Task0.V6.csproj", "{46CE55DE-EC9F-4CEA-8913-0E60D683D83E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task0", "Task0", "{D8576241-FDE2-4812-AB4A-75703CF15FBD}"
 EndProject
