@@ -14,6 +14,6 @@ namespace Tyuiu.RogovAYu.Sprint6.Task2.V10.Lib
             return result;
         }
 
-        public double F(int x) { return Math.Round((2 * x - 1) / (Math.Sin(x) +1) + 2 * x - 4, 3); }
+        public double F(int x) { return Math.Round((2 * x - 1) / (Math.Sin(x) +1) + 2 * x - 4, 2); }
     }
 }
