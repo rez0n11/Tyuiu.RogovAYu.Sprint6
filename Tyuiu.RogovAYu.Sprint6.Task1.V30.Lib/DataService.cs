@@ -14,6 +14,6 @@ namespace Tyuiu.RogovAYu.Sprint6.Task1.V30.Lib
             return result; 
         }
 
-        public double F(int x) { return Math.Round((2 * x - 3) / (Math.Cos(x) - 2 * x) + 5 * x - 6, 3); }
+        public double F(int x) { return Math.Round((2 * x - 3) / (Math.Cos(x) - 2 * x) + 5 * x - 6, 2); }
     }
 }
