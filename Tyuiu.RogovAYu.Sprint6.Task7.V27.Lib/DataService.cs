@@ -12,9 +12,7 @@ namespace Tyuiu.RogovAYu.Sprint6.Task7.V27.Lib
             int[,] m = new int[file.Length, file[0].Split(';').Length];
             for (int i = 0; i < file[0].Split(';').Length; i++)
             {
-                string a = file[4].Split(';')[i];
-                string[] b = file[4].Split(';');
-                int c = int.Parse(a);
+                
                 if (int.Parse(cs[i]) < 0) { cs[i] = "-1"; };
             }
             file[4] = string.Join(';',cs);

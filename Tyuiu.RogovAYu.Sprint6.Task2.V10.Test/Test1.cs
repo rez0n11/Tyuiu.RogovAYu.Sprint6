@@ -1,4 +1,5 @@
-﻿namespace Tyuiu.RogovAYu.Sprint6.Task2.V10.Test
+﻿using Tyuiu.RogovAYu.Sprint6.Task2.V10.Lib;
+namespace Tyuiu.RogovAYu.Sprint6.Task2.V10.Test
 {
     [TestClass]
     public sealed class Test1
