@@ -38,9 +38,9 @@
             TextStop_RAYu = new TextBox();
             TextStart_RAYu = new TextBox();
             GroupOut_RAYu = new GroupBox();
-            TextOut_RAYu = new TextBox();
-            GoButton_RAYu = new Button();
             HelpButton_RAYu = new Button();
+            GoButton_RAYu = new Button();
+            TextOut_RAYu = new TextBox();
             GroupTask.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)TaskPic).BeginInit();
             GroupInput_RAYu.SuspendLayout();
@@ -136,14 +136,14 @@
             GroupOut_RAYu.TabStop = false;
             GroupOut_RAYu.Text = "groupBox1";
             // 
-            // TextOut_RAYu
+            // HelpButton_RAYu
             // 
-            TextOut_RAYu.Location = new Point(0, 26);
-            TextOut_RAYu.Multiline = true;
-            TextOut_RAYu.Name = "TextOut_RAYu";
-            TextOut_RAYu.ReadOnly = true;
-            TextOut_RAYu.Size = new Size(244, 343);
-            TextOut_RAYu.TabIndex = 0;
+            HelpButton_RAYu.Location = new Point(0, 366);
+            HelpButton_RAYu.Name = "HelpButton_RAYu";
+            HelpButton_RAYu.Size = new Size(44, 60);
+            HelpButton_RAYu.TabIndex = 2;
+            HelpButton_RAYu.Text = "?";
+            HelpButton_RAYu.UseVisualStyleBackColor = true;
             // 
             // GoButton_RAYu
             // 
@@ -155,14 +155,14 @@
             GoButton_RAYu.UseVisualStyleBackColor = true;
             GoButton_RAYu.Click += GoButton_RAYu_Click;
             // 
-            // HelpButton_RAYu
+            // TextOut_RAYu
             // 
-            HelpButton_RAYu.Location = new Point(0, 366);
-            HelpButton_RAYu.Name = "HelpButton_RAYu";
-            HelpButton_RAYu.Size = new Size(44, 60);
-            HelpButton_RAYu.TabIndex = 2;
-            HelpButton_RAYu.Text = "?";
-            HelpButton_RAYu.UseVisualStyleBackColor = true;
+            TextOut_RAYu.Location = new Point(0, 26);
+            TextOut_RAYu.Multiline = true;
+            TextOut_RAYu.Name = "TextOut_RAYu";
+            TextOut_RAYu.ReadOnly = true;
+            TextOut_RAYu.Size = new Size(244, 343);
+            TextOut_RAYu.TabIndex = 0;
             // 
             // FormMain
             // 
@@ -172,8 +172,10 @@
             Controls.Add(GroupOut_RAYu);
             Controls.Add(GroupInput_RAYu);
             Controls.Add(GroupTask);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "FormMain";
-            Text = "Form1";
+            Text = "6.1.30";
             GroupTask.ResumeLayout(false);
             GroupTask.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)TaskPic).EndInit();

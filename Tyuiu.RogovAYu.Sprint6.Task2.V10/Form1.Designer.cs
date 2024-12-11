@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.RogovAYu.Sprint6.Task2.V10
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             GroupInput_RAYu = new GroupBox();
             HelpButton_RAYu = new Button();
             GoButton_RAYu = new Button();
@@ -176,7 +176,7 @@
             FX.ReadOnly = true;
             FX.Width = 125;
             // 
-            // Form1
+            // FormMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -184,7 +184,9 @@
             Controls.Add(GroupOut_RAYu);
             Controls.Add(GroupTask_RAYu);
             Controls.Add(GroupInput_RAYu);
-            Name = "Form1";
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            Name = "FormMain";
             Text = "Form1";
             GroupInput_RAYu.ResumeLayout(false);
             GroupInput_RAYu.PerformLayout();

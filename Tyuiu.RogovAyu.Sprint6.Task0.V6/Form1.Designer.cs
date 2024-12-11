@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.RogovAYu.Sprint6.Task0.V6
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -154,7 +154,7 @@
             ButtonHelp_RAYu.UseVisualStyleBackColor = true;
             ButtonHelp_RAYu.Click += ButtonHelp_RAYu_Click;
             // 
-            // Form1
+            // FormMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -165,7 +165,8 @@
             Controls.Add(GroupInput_RAYu);
             Controls.Add(GroupTask_RAYu);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Name = "Form1";
+            MaximizeBox = false;
+            Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "6.0.6 | Рогов А.Ю";
             GroupTask_RAYu.ResumeLayout(false);

@@ -1,9 +1,9 @@
 using Tyuiu.RogovAYu.Sprint6.Task0.V6.Lib;
 namespace Tyuiu.RogovAYu.Sprint6.Task0.V6
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
         }
