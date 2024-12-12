@@ -187,7 +187,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "FormMain";
-            Text = "Form1";
+            Text = "6.2.10";
             GroupInput_RAYu.ResumeLayout(false);
             GroupInput_RAYu.PerformLayout();
             GroupTask_RAYu.ResumeLayout(false);

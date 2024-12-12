@@ -121,7 +121,7 @@
   <data name="TaskPic_RAYu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAnwAAADVCAYAAADNYS1ZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAg/1JREFUeF7tnemPJcWVt+cf8Bd/QOKDxSdkIYSsFkJGIAQtEIO6W2zCLGJYDI3M
+        vQAADr0BR/uQrQAAg/1JREFUeF7tnemPJcWVt+cf8Bd/QOKDxSdkIYSsFkJGIAQtEIO6W2zCLGJYDI3M
         YmM2szUWZtgRYDBtGhA0Sw8YNzuDsdkNDPu+GDwgA2a3MTTLYAYvk+/7RNfvcurUibyZt6u6q6rPI6Wq
         7r2RESdOnDhxMiIy81+aJEmSJEmSZFaTAV+SJEmSJMksJwO+JEmSJEmSWU4GfEmSJEmSJLOcDPiSJEmS
         JElmORnwJUmSJEmSzHIy4EuSJElG4v3332/uu+++5oMPPhj7JkmS6UoY8P3Hf/xH8y//8i/Nf/3Xf419
@@ -687,12 +687,6 @@
         8CVJkiRJksxyMuBLkiRJkiSZ1TTN/wPLfXETdSthlQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="X.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="FX.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="X.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
