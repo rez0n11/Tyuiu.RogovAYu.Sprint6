@@ -20,7 +20,7 @@ namespace Tyuiu.RogovAYu.Sprint6.Task7.V27.Lib
             {
                 for (int j = 0; j < file.Length; j++)
                 { 
-                    m[i,j] = int.Parse(file[i].Split(';')[j]);
+                    m[j,i] = int.Parse(file[i].Split(';')[j]);
                 }
             }
             return m;

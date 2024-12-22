@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             panel1 = new Panel();
+            buttonGo = new Button();
             buttonHelp = new Button();
             buttonSave = new Button();
             buttonLoad = new Button();
@@ -47,6 +48,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(buttonGo);
             panel1.Controls.Add(buttonHelp);
             panel1.Controls.Add(buttonSave);
             panel1.Controls.Add(buttonLoad);
@@ -55,6 +57,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1089, 125);
             panel1.TabIndex = 0;
+            // 
+            // buttonGo
+            // 
+            buttonGo.Image = (Image)resources.GetObject("buttonGo.Image");
+            buttonGo.Location = new Point(236, 12);
+            buttonGo.Name = "buttonGo";
+            buttonGo.Size = new Size(94, 94);
+            buttonGo.TabIndex = 1;
+            buttonGo.UseVisualStyleBackColor = true;
+            buttonGo.Click += buttonGo_Click;
             // 
             // buttonHelp
             // 
@@ -98,6 +110,7 @@
             // 
             // GridInput
             // 
+            GridInput.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             GridInput.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             GridInput.ColumnHeadersVisible = false;
             GridInput.Dock = DockStyle.Fill;
@@ -119,6 +132,7 @@
             // 
             // GridOutput
             // 
+            GridOutput.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             GridOutput.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             GridOutput.ColumnHeadersVisible = false;
             GridOutput.Dock = DockStyle.Fill;
@@ -162,5 +176,6 @@
         private DataGridView GridInput;
         private DataGridView GridOutput;
         private OpenFileDialog openFileDialogTask;
+        private Button buttonGo;
     }
 }
