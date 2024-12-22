@@ -6,24 +6,20 @@ namespace Tyuiu.RogovAYu.Sprint6.Task7.V27.Lib
     {
         public int[,] GetMatrix(string path)
         {
-            
-            string[] file = File.ReadAllText(path).Split('\n');
-            string[] cs = file[4].Split(';');
-            int[,] m = new int[file.Length, file[0].Split(';').Length];
-            for (int i = 0; i < file[0].Split(';').Length; i++)
+            string file = File.ReadAllText(path);
+            string[] rows = file.Split('\n');
+            int rc = rows.Length, cc = rows[0].Split(';').Length;
+            int[,] matrix = new int[rc,cc];
+            for (int i = 0; i < rc; i++)
             {
-                
-                if (int.Parse(cs[i]) < 0) { cs[i] = "-1"; };
-            }
-            file[4] = string.Join(';',cs);
-            for (int i = 0;i < file[0].Split(';').Length; i++)
-            {
-                for (int j = 0; j < file.Length; j++)
-                { 
-                    m[j,i] = int.Parse(file[i].Split(';')[j]);
+                for (int j = 0; j < cc; j++) 
+                {
+                    matrix[i, j] = Convert.ToInt32(rows[i].Split(';')[j]);
+                    if (i == 4 && matrix[i, j] < 0) { matrix[i, j] = -1; }
                 }
             }
-            return m;
+
+            return matrix;
         }
     }
 }

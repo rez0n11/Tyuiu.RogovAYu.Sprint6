@@ -10,22 +10,10 @@ namespace Tyuiu.RogovAYu.Sprint6.Task7.V27.Test
         public void TestMethod1()
         {
             DataService ds = new();
-            string path = Path.Combine("C:", "DataSprint6", "InPutDataFileTask7V27.csv");
+            string path = Path.Combine("C:", "DataSprint6", "huh.txt");
 
-            string[] file = File.ReadAllText(path).Split('\n');
-            
-            int[,] m = new int[file.Length, file[0].Split(';').Length];
+            int[,] m = { { 1, 2},{2, 0},{3, 3},{ -2, 5},{ -1, 24 },{ 12413254, 32432234} };
 
-            for (int i = 0; i < file.Length; i++)
-            {
-                for (int j = 0; j < file[i].Split(';').Length; j++)
-                {
-                    m[i, j] = Convert.ToInt32(file[i].Split(';')[j]);
-                    if (m[4, j] < 0) { m[4, i] = -1; }
-                }
-                
-            }
-            
             CollectionAssert.AreEqual(m, ds.GetMatrix(path));
         }
     }

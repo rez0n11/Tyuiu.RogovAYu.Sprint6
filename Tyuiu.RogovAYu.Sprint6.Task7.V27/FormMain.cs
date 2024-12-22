@@ -11,16 +11,16 @@ namespace Tyuiu.RogovAYu.Sprint6.Task7.V27
 
         private void buttonLoad_Click(object sender, EventArgs e)
         {
-            DataService ds = new();
+            
             openFileDialogTask.ShowDialog();
             string path = openFileDialogTask.FileName;
             string[] s = File.ReadAllText(path).Split('\n');
             string[,] input = new string[s.Length, s[0].Split(';').Length];
 
-            GridInput.ColumnCount = input.GetLength(0);
-            GridOutput.ColumnCount = input.GetLength(0);
-            GridInput.RowCount = input.GetLength(1);
-            GridOutput.RowCount = input.GetLength(1);
+            GridInput.ColumnCount = input.GetLength(1);
+            GridOutput.ColumnCount = input.GetLength(1);
+            GridInput.RowCount = input.GetLength(0);
+            GridOutput.RowCount = input.GetLength(0);
 
             
 
