@@ -8,6 +8,7 @@ namespace Tyuiu.RogovAYu.Sprint6.Task7.V27.Lib
         {
             string file = File.ReadAllText(path);
             string[] rows = file.Split('\n');
+            foreach (string row in rows) {row.Trim(); }
             int rc = rows.Length, cc = rows[0].Split(';').Length;
             int[,] matrix = new int[rc,cc];
             for (int i = 0; i < rc; i++)
