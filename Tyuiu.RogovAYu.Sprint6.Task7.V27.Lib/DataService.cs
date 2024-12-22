@@ -7,9 +7,9 @@ namespace Tyuiu.RogovAYu.Sprint6.Task7.V27.Lib
         public int[,] GetMatrix(string path)
         {
             string file = File.ReadAllText(path);
-            string[] rows = file.Split('\n');
+            string[] rows = file.Split('\n', StringSplitOptions.RemoveEmptyEntries);
             foreach (string row in rows) {row.Trim(); }
-            int rc = rows.Length, cc = rows[0].Split(';').Length;
+            int rc = rows.Length, cc = rows[0].Split(';', StringSplitOptions.RemoveEmptyEntries).Length;
             int[,] matrix = new int[rc,cc];
             for (int i = 0; i < rc; i++)
             {

@@ -1,4 +1,5 @@
 using System.IO;
+using Tyuiu.RogovAYu.Sprint6.Task6.V14;
 using Tyuiu.RogovAYu.Sprint6.Task7.V27.Lib;
 namespace Tyuiu.RogovAYu.Sprint6.Task7.V27
 {
@@ -7,6 +8,9 @@ namespace Tyuiu.RogovAYu.Sprint6.Task7.V27
         public FormMain()
         {
             InitializeComponent();
+            buttonGo.Enabled = false;
+            buttonSave.Enabled = false;
+
         }
 
         private void buttonLoad_Click(object sender, EventArgs e)
@@ -34,18 +38,27 @@ namespace Tyuiu.RogovAYu.Sprint6.Task7.V27
                 }
             }
 
+            buttonSave.Enabled = true;
+            buttonGo.Enabled = true;
         }
 
 
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-
+            int[,] outp = new int[GridOutput.RowCount, GridInput.ColumnCount];
+            for (int i = 0; i<GridOutput.RowCount; i++)
+            {
+                for (int j = 0;j < GridOutput.ColumnCount; j++)
+                {
+                    outp[i, j] = Convert.ToInt32(GridOutput.Rows[i].Cells[j].Value.ToString());
+                }
+            }
         }
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void buttonGo_Click(object sender, EventArgs e)
@@ -54,7 +67,7 @@ namespace Tyuiu.RogovAYu.Sprint6.Task7.V27
 
             string path = openFileDialogTask.FileName;
             string file = File.ReadAllText(path);
-            string[] rows = file.Split('\n');
+            string[] rows = file.Split('\n', StringSplitOptions.RemoveEmptyEntries);
             int rc = rows.Length, cc = rows[0].Split(';').Length;   
             int[,] output = ds.GetMatrix(path);
             for (int i = 0; i < rc; i++)
@@ -65,5 +78,9 @@ namespace Tyuiu.RogovAYu.Sprint6.Task7.V27
                 }
             }
         }
+
+
+       
+
     }
 }
