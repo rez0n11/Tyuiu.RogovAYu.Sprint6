@@ -14,22 +14,23 @@ namespace Tyuiu.RogovAYu.Sprint6.Task7.V27
             
             openFileDialogTask.ShowDialog();
             string path = openFileDialogTask.FileName;
-            string[] s = File.ReadAllText(path).Split('\n');
-            string[,] input = new string[s.Length, s[0].Split(';').Length];
+            string file = File.ReadAllText(path);
+            string[] rows = file.Split('\n');
+            int rc = rows.Length, cc = rows[0].Split(';').Length;
+            int[,] input = new int[rc, cc];
 
-            GridInput.ColumnCount = input.GetLength(1);
-            GridOutput.ColumnCount = input.GetLength(1);
-            GridInput.RowCount = input.GetLength(0);
-            GridOutput.RowCount = input.GetLength(0);
+            GridInput.ColumnCount = cc;
+            GridOutput.ColumnCount = cc;
+            GridInput.RowCount = rc;
+            GridOutput.RowCount = rc;
 
             
 
-            for (int i = 0; i < input.GetLength(0); i++)
+            for (int i = 0; i < rc; i++)
             {
-                for (int j = 0; j < input.GetLength(1); j++)
+                for (int j = 0; j < cc; j++)
                 {
-                    GridInput.Rows[i].Cells[j].Value = s[i].Split(';')[j];
-                    
+                    GridInput.Rows[i].Cells[j].Value = Convert.ToInt32(rows[i].Split(';')[j]);
                 }
             }
 
@@ -52,14 +53,15 @@ namespace Tyuiu.RogovAYu.Sprint6.Task7.V27
             DataService ds = new();
 
             string path = openFileDialogTask.FileName;
+            string file = File.ReadAllText(path);
+            string[] rows = file.Split('\n');
+            int rc = rows.Length, cc = rows[0].Split(';').Length;   
             int[,] output = ds.GetMatrix(path);
-
-            for (int i = 0; i < GridOutput.ColumnCount; i++)
+            for (int i = 0; i < rc; i++)
             {
-                for (int j = 0; j < GridOutput.RowCount; j++)
+                for (int j = 0; j < cc; j++)
                 {
-                    
-                    GridOutput.Rows[i].Cells[j].Value = Convert.ToString(output[j, i]);
+                    GridOutput.Rows[i].Cells[j].Value = output[i,j];
                 }
             }
         }
