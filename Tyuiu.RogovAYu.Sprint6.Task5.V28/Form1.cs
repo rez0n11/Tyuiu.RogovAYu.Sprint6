@@ -25,10 +25,16 @@ namespace Tyuiu.RogovAYu.Sprint6.Task5.V28
             DataService ds = new();
             int i = 0;
             double[] r = ds.LoadFromDataFile(Path.Combine("C:", "DataSprint6", "InPutDataFileTask5V28.txt"));
-            foreach (double d in r) {
-                GridBox.Rows.Add(i,d);i++;
-                chart.Series[0].Points.AddXY(i,d);
+            foreach (double d in r)
+            {
+                GridBox.Rows.Add(i, d); i++;
+                chart.Series[0].Points.AddXY(i, d);
             }
+        }
+
+        private void chart_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

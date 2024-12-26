@@ -22,12 +22,19 @@ namespace Tyuiu.RogovAYu.Sprint6.Task1.V30
                 TextOut_RAYu.AppendText("+---------------+" + Environment.NewLine);
                 TextOut_RAYu.AppendText("|   X   |  F(x) |" + Environment.NewLine);
                 TextOut_RAYu.AppendText("+---------------+" + Environment.NewLine);
-                for (int i = 0; i < result.Length; i++) { string s = string.Format("|{0,5:d}  | {1,5:f2} |", i + int.Parse(TextStart_RAYu.Text), result[i]);
+                for (int i = 0; i < result.Length; i++)
+                {
+                    string s = string.Format("|{0,5:d}  | {1,5:f2} |", i + int.Parse(TextStart_RAYu.Text), result[i]);
                     TextOut_RAYu.AppendText(s + Environment.NewLine);
                 }
                 TextOut_RAYu.AppendText("+---------------+\n");
             }
             catch { MessageBox.Show("Неверные данные"); }
+        }
+
+        private void HelpButton_RAYu_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Выполнил Рогов Александр Юрьевич, ПКТб-24-1", "Сообщение");
         }
     }
 }

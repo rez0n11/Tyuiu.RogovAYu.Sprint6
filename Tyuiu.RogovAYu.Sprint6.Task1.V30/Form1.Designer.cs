@@ -144,6 +144,7 @@
             HelpButton_RAYu.TabIndex = 2;
             HelpButton_RAYu.Text = "?";
             HelpButton_RAYu.UseVisualStyleBackColor = true;
+            HelpButton_RAYu.Click += HelpButton_RAYu_Click;
             // 
             // GoButton_RAYu
             // 

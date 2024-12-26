@@ -23,5 +23,10 @@ namespace Tyuiu.RogovAYu.Sprint6.Task3.V23
         {
 
         }
+
+        private void HelpButton_RAYu_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Выполнил Рогов Александр Юрьевич, ПКТб-24-1", "Сообщение");
+        }
     }
 }

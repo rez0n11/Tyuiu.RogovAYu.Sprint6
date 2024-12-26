@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             panel1 = new Panel();
             buttonGo = new Button();
@@ -39,6 +40,7 @@
             panel3 = new Panel();
             GridOutput = new DataGridView();
             openFileDialogTask = new OpenFileDialog();
+            toolTipButton = new ToolTip(components);
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)GridInput).BeginInit();
@@ -67,6 +69,7 @@
             buttonGo.TabIndex = 1;
             buttonGo.UseVisualStyleBackColor = true;
             buttonGo.Click += buttonGo_Click;
+            buttonGo.MouseEnter += MouseGo;
             // 
             // buttonHelp
             // 
@@ -78,6 +81,7 @@
             buttonHelp.TabIndex = 0;
             buttonHelp.UseVisualStyleBackColor = true;
             buttonHelp.Click += buttonHelp_Click;
+            buttonHelp.MouseEnter += MouseInfo;
             // 
             // buttonSave
             // 
@@ -88,6 +92,7 @@
             buttonSave.TabIndex = 0;
             buttonSave.UseVisualStyleBackColor = true;
             buttonSave.Click += buttonSave_Click;
+            buttonSave.MouseMove += Mouse_Save;
             // 
             // buttonLoad
             // 
@@ -98,6 +103,7 @@
             buttonLoad.TabIndex = 0;
             buttonLoad.UseVisualStyleBackColor = true;
             buttonLoad.Click += buttonLoad_Click;
+            buttonLoad.MouseEnter += Mouse_Load;
             // 
             // panel2
             // 
@@ -147,6 +153,18 @@
             // 
             openFileDialogTask.FileName = "openFileDialog1";
             // 
+            // toolTipButton
+            // 
+            toolTipButton.AutoPopDelay = 5000;
+            toolTipButton.InitialDelay = 1000;
+            toolTipButton.IsBalloon = true;
+            toolTipButton.ReshowDelay = 500;
+            toolTipButton.ShowAlways = true;
+            toolTipButton.StripAmpersands = true;
+            toolTipButton.ToolTipIcon = ToolTipIcon.Info;
+            toolTipButton.ToolTipTitle = "Tip";
+            toolTipButton.Popup += toolTipButton_Popup;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -156,7 +174,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "FormMain";
-            Text = "Form1";
+            Text = "6.7.27 | Рогов А.Ю.";
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)GridInput).EndInit();
@@ -177,5 +195,6 @@
         private DataGridView GridOutput;
         private OpenFileDialog openFileDialogTask;
         private Button buttonGo;
+        private ToolTip toolTipButton;
     }
 }

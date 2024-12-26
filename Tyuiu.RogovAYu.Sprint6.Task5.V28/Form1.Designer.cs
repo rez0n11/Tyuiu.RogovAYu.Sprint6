@@ -39,10 +39,10 @@
             buttonSave = new Button();
             panel2 = new Panel();
             GridBox = new DataGridView();
-            panel3 = new Panel();
-            chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
+            panel3 = new Panel();
+            chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)GridBox).BeginInit();
@@ -132,6 +132,20 @@
             GridBox.Size = new Size(229, 427);
             GridBox.TabIndex = 0;
             // 
+            // Column1
+            // 
+            Column1.HeaderText = " ";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.Width = 50;
+            // 
+            // Column2
+            // 
+            Column2.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column2.HeaderText = " ";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            // 
             // panel3
             // 
             panel3.Controls.Add(chart);
@@ -158,20 +172,7 @@
             chart.Size = new Size(658, 427);
             chart.TabIndex = 0;
             chart.Text = "chart1";
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = " ";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.Width = 50;
-            // 
-            // Column2
-            // 
-            Column2.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Column2.HeaderText = " ";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
+            chart.Click += chart_Click;
             // 
             // Form1
             // 
